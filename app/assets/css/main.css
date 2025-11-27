@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-dark-bg text-white font-signika antialiased;
+  }
+}
+
+@layer components {
+  /* Gold textured button */
+  .btn-gold {
+    @apply flex items-center justify-center px-8 py-4 gap-2 font-signika font-normal text-black rounded-lg tracking-wide;
+    background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), #B9975F;
+  }
+
+  .btn-textured {
+    @apply flex items-center justify-center px-8 py-4 gap-2 font-signika font-normal text-black rounded-lg tracking-[0.02em];
+    background-image: url('/Images/Rectangle 55.png'), linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), #B9975F;
+    background-blend-mode: multiply, normal;
+  }
+
+  .btn-gold:hover {
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), #B9975F;
+  }
+  
+  /* Gold button with shadow base */
+  .btn-gold-shadow {
+    @apply flex flex-col items-start p-0 pb-2 gap-2 rounded-lg;
+    background: #715932;
+  }
+
+  .btn-cta-shadow {
+    @apply inline-flex rounded-lg pb-2;
+    background: #715932;
+  }
+  
+  /* Ghost/outline button */
+  .btn-ghost {
+    @apply flex items-center justify-center px-8 py-4 gap-2 font-signika font-normal text-white rounded-lg tracking-wide border border-white/30 bg-white/10;
+  }
+
+  .btn-ghost:hover {
+    @apply bg-white/20;
+  }
+
+  .btn-ghost-dark {
+    @apply flex items-center justify-center px-8 py-4 gap-2 font-signika font-normal text-white rounded-lg tracking-[0.02em];
+    background: linear-gradient(180deg, #2D2E32 0%, #1C1D20 100%);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.25), 0px 10px 35px rgba(0, 0, 0, 0.45);
+  }
+
+  /* Section heading with decorative lines */
+  .section-heading {
+    @apply font-vollkorn font-semibold text-4xl md:text-5xl text-center;
+  }
+  
+  /* Decorative divider */
+  .divider-ornament {
+    @apply flex items-center justify-center gap-3 w-full max-w-3xl mx-auto;
+  }
+  
+  .divider-line {
+    @apply flex-1 h-[14px];
+    background: linear-gradient(90deg, transparent 0%, #A8673E 50%, transparent 100%);
+  }
+  
+  .divider-diamond {
+    @apply w-5 h-5 rotate-45;
+    background: #9D5E37;
+  }
+  
+  /* Card styles */
+  .card-dark {
+    @apply bg-white/[0.08] border border-white/10 rounded-lg;
+  }
+  
+  /* Gold accent text */
+  .text-accent {
+    @apply text-gold font-semibold;
+  }
+
+  .hero-heading {
+    @apply uppercase tracking-[0.06em] text-gold font-vollkorn font-bold;
+    text-shadow: 0px 8px 11px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero-subtext {
+    @apply font-signika font-light text-[24px] leading-[30px] text-white/75;
+  }
+
+  .card-portrait {
+    @apply relative flex-shrink-0 w-[278px] h-[278px] rounded-[12px] border border-white/10 overflow-hidden bg-white/5;
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.45);
+  }
+
+  .card-portrait::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 16, 18, 0) 0%, rgba(15, 16, 18, 0.8) 100%);
+  }
+
+  .card-portrait img {
+    @apply absolute inset-0 w-full h-full object-cover;
+    filter: saturate(0) contrast(1.05);
+  }
+
+  .card-portrait--color img {
+    filter: none;
+  }
+
+  .progress-track {
+    @apply w-full h-[24px] rounded-full bg-white/10 relative overflow-hidden;
+  }
+
+  .progress-fill {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #3DDD3B 0%, #D0DD3B 50%, #DD3B3B 100%);
+    border-radius: inherit;
+  }
+
+  /* Bullet point with gold diamond */
+  .bullet-gold {
+    @apply w-5 h-5 flex-shrink-0;
+    background: #B9975F;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0px 8px 11px rgba(0, 0, 0, 0.3);
+  }
+  
+  .gradient-fade-bottom {
+    background: linear-gradient(0deg, #0F1012 0%, rgba(15, 16, 18, 0) 100%);
+  }
+  
+  .gradient-fade-top {
+    background: linear-gradient(180deg, #0F1012 0%, rgba(15, 16, 18, 0) 100%);
+  }
+  
+  .backdrop-blur-card {
+    backdrop-filter: blur(22px);
+  }
+}
