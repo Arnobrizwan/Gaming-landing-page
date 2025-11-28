@@ -20,3 +20,7 @@
     </main>
   </div>
 </template>
+
+<script setup>
+// Nuxt 3 auto-imports components from app/components directory
+</script>

@@ -1,133 +1,133 @@
 <template>
-  <section class="relative w-full min-h-screen lg:h-[1117px] overflow-hidden bg-[#0F1012]">
-    <!-- Background Image - Rectangle 49 -->
-    <div 
-      class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat brightness-[0.45]"
-      style="background-image: url('/Images/Rectangle 49.jpg');"
+  <section class="relative w-full h-[1150px] bg-[#0B0C0E] overflow-hidden">
+    
+    <div
+      class="absolute inset-0 bg-cover bg-center z-0"
+      style="
+        background-image: url('/Images/Frame 21 (1).png');
+        background-position: center top;
+        filter: brightness(0.85) contrast(1.1); 
+      "
     ></div>
-    
-    <!-- Dark overlay to match Figma tone -->
-    <div class="absolute inset-0 bg-gradient-to-br from-[#0a0b0d]/80 via-[#0f1012]/60 to-[#0f1012]/40 pointer-events-none"></div>
-    
-    <!-- Rectangle 58 - Bottom gradient -->
+
     <div 
-      class="absolute left-0 right-0 h-[40%] bottom-[10%] pointer-events-none"
-      style="background: linear-gradient(360deg, #0F1012 0%, rgba(15, 16, 18, 0) 100%);"
+      class="absolute inset-0 pointer-events-none z-0"
+      style="
+        background: radial-gradient(
+          circle at 50% 40%, 
+          rgba(0, 0, 0, 0) 20%, 
+          rgba(0, 0, 0, 0.4) 60%, 
+          #0B0C0E 100%
+        );
+      "
     ></div>
-    
-    <!-- Rectangle 57 - Bottom gradient -->
+
     <div 
-      class="absolute left-0 right-0 h-[35%] bottom-0 pointer-events-none"
-      style="background: linear-gradient(360deg, #0F1012 0%, rgba(15, 16, 18, 0) 100%);"
-    ></div>
-    
-    <!-- Frame 18 - Header -->
-    <header class="absolute top-0 left-0 right-0 z-50 flex justify-between items-center px-6 lg:px-[120px] py-4 h-[80px] lg:h-[116px]">
-      <!-- Frame 17 - Logo & Nav -->
-      <div class="flex items-center gap-14">
-        <!-- Logo -->
-        <a href="#" class="block">
-          <img src="/Images/Valdris copy (1) 1.png" alt="MythWeaver" class="w-[127px] h-[30px] object-contain" />
-        </a>
-        <!-- Frame 14 - Nav Links -->
-        <div class="flex items-center gap-2">
-          <a href="#" class="flex items-center justify-center px-4 py-2 font-signika font-normal text-base leading-5 tracking-[0.02em] text-white/80 hover:text-white transition-colors">
-            Blog
-          </a>
-          <a href="#" class="flex items-center justify-center px-4 py-2 font-signika font-normal text-base leading-5 tracking-[0.02em] text-white/80 hover:text-white transition-colors">
-            Tiers & Treasures
-          </a>
-        </div>
+      class="absolute bottom-0 left-0 right-0 h-[500px] pointer-events-none z-10"
+      style="background: linear-gradient(0deg, #0B0C0E 0%, rgba(11, 12, 14, 0) 100%);">
+    </div>
+
+    <header class="absolute top-0 left-0 right-0 z-50 flex justify-between items-center px-[100px] h-[97px]">
+      <div class="flex items-center gap-12">
+        <img src="/Images/Valdris copy (1) 1.png" class="h-[25px] w-auto opacity-90" alt="Logo" />
+        <nav class="flex items-center gap-6">
+          <a class="text-white/80 font-signika text-[15px] hover:text-white transition cursor-pointer">Blog</a>
+          <a class="text-white/80 font-signika text-[15px] hover:text-white transition cursor-pointer">Tiers & Treasures</a>
+        </nav>
       </div>
-      <!-- Frame 16 - Auth Buttons -->
-      <div class="flex items-center gap-2">
-        <!-- Frame 13 - Log in -->
-        <button class="flex items-center justify-center px-4 py-2 w-[75px] h-[36px] bg-white/10 border border-white/30 rounded-lg font-signika font-normal text-base leading-5 tracking-[0.02em] text-white hover:bg-white/20 transition-colors">
+      <div class="flex items-center gap-3">
+        <button class="px-4 py-[6px] border border-white/30 bg-white/5 text-white font-signika text-[14px] rounded-lg hover:bg-white/10 transition">
           Log in
         </button>
-        <!-- Frame 15 - Start for free -->
         <button 
-          class="flex items-center justify-center px-4 py-2 w-[125px] h-[36px] rounded-lg font-signika font-normal text-base leading-5 tracking-[0.02em] text-black hover:brightness-95 transition"
-          style="background: url('/Images/Rectangle 55.png'), #B9975F; background-blend-mode: multiply, normal;"
-        >
+          class="px-6 py-[6px] text-black font-signika text-[14px] rounded-lg transition-all hover:scale-105"
+          style="
+            background: url('/Images/Texture 7.png'), #CBA66A; 
+            background-blend-mode: multiply;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+          ">
           Start for free
         </button>
       </div>
     </header>
-    
-    <!-- Frame 1 - Hero Text -->
-    <div class="absolute flex flex-col items-center gap-4 w-[calc(100%-48px)] lg:w-[1471px] left-6 lg:left-[120px] top-[120px] lg:top-[189px]">
-      <!-- Heading -->
-      <h1 
-        class="w-full font-vollkorn font-bold text-[40px] lg:text-[64px] leading-[1.4] lg:leading-[89px] text-gold"
-        style="text-shadow: 0px 8px 11px rgba(0, 0, 0, 0.3);"
+
+    <div class="absolute top-[220px] left-[100px] right-[100px] z-40 flex flex-col gap-6">
+      
+      <h1
+        class="font-vollkorn font-bold text-[64px] leading-[1.1] w-full max-w-[1250px] tracking-wide"
+        style="
+          background: url('/Images/Texture 7.png'), linear-gradient(180deg, #F0D599 0%, #CBA66A 50%, #8C6B38 100%);
+          background-blend-mode: overlay; 
+          background-size: cover;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          color: transparent;
+          
+          filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, 0.8));
+          font-variant: small-caps;
+        "
       >
-        Run Legendary Campaigns<br />Without the Burnout
+        Run Legendary Campaigns<br />
+        Without the Burnout
       </h1>
-      <!-- Subtext -->
-      <p class="w-full font-signika font-light text-lg lg:text-2xl leading-[26px] lg:leading-[30px] text-white/80">
+      
+      <p class="text-[20px] leading-[28px] font-signika font-light max-w-[800px] text-[#DDDDDD]"
+         style="text-shadow: 0px 1px 2px rgba(0,0,0,0.8);">
         Cut your prep time from hours to minutes with AI built specifically for tabletop RPGs.
       </p>
     </div>
-    
-    <!-- Frame 57 - CTA Buttons Row -->
-    <div class="absolute flex justify-between items-center w-[calc(100%-48px)] lg:w-[1488px] left-6 lg:left-[120px] bottom-[35%] lg:top-[786px] lg:bottom-auto">
-      <!-- Frame 55 - Primary CTA -->
-      <div class="flex flex-col items-start gap-[23px] w-[328px]">
-        <!-- Frame 255 - Button wrapper -->
-        <div class="flex flex-col items-start pb-2 gap-2 w-[259px] rounded-lg" style="background: #715932;">
-          <!-- Frame 4 - Button -->
-          <button 
-            class="flex items-center justify-center w-[259px] h-[60px] rounded-lg font-signika font-normal text-[23px] leading-7 tracking-[0.02em] text-black"
-            style="background: url('/Images/Rectangle 55.png'), #B9975F; background-blend-mode: multiply, normal;"
-          >
-            Start Creating Free
-          </button>
-        </div>
-        <!-- Helper text -->
-        <p class="font-figtree font-normal text-base leading-[19px] tracking-[0.02em] text-white">
+
+    <div class="absolute top-[655px] left-[100px] right-[100px] z-40 flex justify-between items-start">
+      
+      <div class="flex flex-col items-start gap-[14px]">
+        <button
+          class="px-8 py-3 text-black font-signika text-[19px] leading-[23px] rounded-lg transition-all duration-300 hover:scale-105"
+          style="
+            background: url('/Images/Texture 7.png'), #CBA66A; 
+            background-blend-mode: multiply;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+          ">
+          Start Creating Free
+        </button>
+        <p class="text-white/80 text-[13px] font-figtree tracking-wide pl-1">
           No credit card required • Join 26,000+ DMs
         </p>
       </div>
       
-      <!-- Frame 56 - Secondary CTA -->
-      <div class="flex flex-col items-start gap-[23px] w-[277px]">
-        <!-- Frame 256 - Button wrapper -->
-        <div class="flex flex-col items-start pb-2 gap-2 w-[277px]">
-          <!-- Frame 5 - Button -->
-          <button class="flex items-center justify-center w-[277px] h-[62px] bg-white/10 border border-white/30 rounded-lg font-signika font-normal text-2xl leading-[30px] tracking-[0.02em] text-white hover:bg-white/20 transition">
-            Watch How It Works
-          </button>
-        </div>
-        <!-- Helper text -->
-        <p class="w-full font-figtree font-normal text-base leading-[19px] tracking-[0.02em] text-white">
+      <div class="flex flex-col items-start gap-[14px]">
+        <button class="px-8 py-3 text-white font-signika text-[19px] rounded-lg border border-white/20 bg-black/40 hover:bg-white/10 transition shadow-lg backdrop-blur-sm">
+          Watch How It Works
+        </button>
+        <p class="text-white/80 text-[13px] font-figtree tracking-wide pl-1">
           Used by 26,000+ DMs
         </p>
       </div>
+
     </div>
-    
-    <!-- Frame 136 - Character Cards -->
-    <div class="absolute flex items-center gap-4 lg:gap-6 w-[calc(100%-48px)] lg:w-[1488px] left-6 lg:left-[120px] bottom-0 lg:top-[978px] lg:bottom-auto overflow-x-auto pb-4">
-      <!-- Frame 84 - Card 1 (Color) -->
-      <div class="relative flex-shrink-0 w-[180px] lg:w-[278px] h-[180px] lg:h-[278px] bg-white/[0.08] border border-white/10 rounded-lg overflow-hidden">
-        <img src="/Images/Frame 84.png" alt="Character" class="absolute inset-0 w-full h-full object-cover" />
-      </div>
-      <!-- Frame 85 - Card 2 (Grayscale) -->
-      <div class="relative flex-shrink-0 w-[180px] lg:w-[279px] h-[180px] lg:h-[278px] bg-white/[0.08] border border-white/10 rounded-lg overflow-hidden">
-        <img src="/Images/Frame 85.png" alt="Character" class="absolute inset-0 w-full h-full object-cover grayscale" />
-      </div>
-      <!-- Frame 86 - Card 3 (Grayscale) -->
-      <div class="relative flex-shrink-0 w-[180px] lg:w-[279px] h-[180px] lg:h-[278px] bg-white/[0.08] border border-white/10 rounded-lg overflow-hidden">
-        <img src="/Images/Frame 86.png" alt="Character" class="absolute inset-0 w-full h-full object-cover grayscale" />
-      </div>
-      <!-- Frame 87 - Card 4 (Grayscale) -->
-      <div class="relative flex-shrink-0 w-[180px] lg:w-[278px] h-[180px] lg:h-[278px] bg-white/[0.08] border border-white/10 rounded-lg overflow-hidden">
-        <img src="/Images/Frame 87.png" alt="Character" class="absolute inset-0 w-full h-full object-cover grayscale" />
-      </div>
-      <!-- Frame 88 - Card 5 (Grayscale) -->
-      <div class="relative flex-shrink-0 w-[180px] lg:w-[278px] h-[180px] lg:h-[278px] bg-white/[0.08] border border-white/10 rounded-lg overflow-hidden">
-        <img src="/Images/Frame 88.png" alt="Character" class="absolute inset-0 w-full h-full object-cover grayscale" />
-      </div>
+
+    <div class="absolute top-[850px] left-[100px] z-40 flex gap-5">
+      <div class="w-[220px] h-[220px] rounded-lg bg-gray-900 shadow-2xl overflow-hidden border border-white/10"><img src="/Images/Frame 84.png" class="w-full h-full object-cover" /></div>
+      <div class="w-[220px] h-[220px] rounded-lg bg-gray-900 shadow-2xl overflow-hidden border border-white/10"><img src="/Images/Frame 85.png" class="w-full h-full object-cover grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition duration-300" /></div>
+      <div class="w-[220px] h-[220px] rounded-lg bg-gray-900 shadow-2xl overflow-hidden border border-white/10"><img src="/Images/Frame 86.png" class="w-full h-full object-cover grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition duration-300" /></div>
+      <div class="w-[220px] h-[220px] rounded-lg bg-gray-900 shadow-2xl overflow-hidden border border-white/10"><img src="/Images/Frame 87.png" class="w-full h-full object-cover grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition duration-300" /></div>
+      <div class="w-[220px] h-[220px] rounded-lg bg-gray-900 shadow-2xl overflow-hidden border border-white/10"><img src="/Images/Frame 88.png" class="w-full h-full object-cover grayscale opacity-80 hover:opacity-100 hover:grayscale-0 transition duration-300" /></div>
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  name: 'HeroSection'
+}
+</script>
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap');
+
+.font-vollkorn { font-family: 'Vollkorn SC', serif; }
+.font-signika { font-family: 'Signika', sans-serif; }
+.font-figtree { font-family: 'Figtree', sans-serif; }
+</style>

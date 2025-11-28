@@ -5,7 +5,7 @@
       <div class="flex items-center gap-14">
         <!-- Logo - Using image placeholder, replace with actual logo -->
         <a href="#" class="block">
-          <img src="/Images/Valdris copy (1) 1.png" alt="MythWeaver" class="h-[30px] w-auto" />
+          <img :src="encodeURI('/Images/Valdris copy (1) 1.png')" alt="MythWeaver" class="h-[30px] w-auto" />
         </a>
         
         <!-- Nav Links -->
@@ -31,3 +31,7 @@
     </nav>
   </header>
 </template>
+
+<script setup>
+// encodeURI is a global JavaScript function, available in template
+</script>

@@ -1,85 +1,114 @@
 <template>
-  <section class="relative w-full py-[248px] px-8 lg:px-[120px] bg-gradient-to-b from-dark-bg to-[#1B1B1D]">
-    <!-- Decorative glow -->
-    <div class="absolute right-[218px] top-1/2 translate-y-[190px] w-[508px] h-[271px] bg-gold blur-[138px] opacity-30 pointer-events-none"></div>
+  <section class="relative w-full bg-[#0B0C0E] px-[100px] pb-[120px] z-50 overflow-hidden">
     
-    <div class="relative z-10 max-w-[1488px] mx-auto flex flex-col gap-[88px]">
-      <!-- Section Header -->
-      <div class="flex flex-col items-center text-center gap-6">
-        <h2 class="hero-heading text-[48px] leading-[67px] normal-case">We Know How it feels</h2>
-        <div class="divider-ornament">
-          <div class="h-[14px] flex-1 bg-gradient-to-r from-transparent via-gold-accent to-transparent"></div>
-          <div class="divider-diamond"></div>
-          <div class="h-[14px] flex-1 bg-gradient-to-l from-transparent via-gold-accent to-transparent"></div>
-        </div>
-      </div>
+    <div class="flex flex-col items-center justify-center mb-12 pt-6 gap-2">
       
-      <!-- Content Grid -->
-      <div class="flex flex-col lg:flex-row items-start gap-20">
-        <!-- Left: Text Content -->
-        <div class="flex flex-col gap-10 w-full lg:w-[704px] text-white/80">
-          <div class="flex flex-col gap-6">
-            <p class="font-signika font-semibold text-2xl text-gold leading-8">
-              It's Tuesday night. Your game is Thursday. And you still need to:
-            </p>
-            <div class="flex flex-col gap-4">
-              <div v-for="item in todoItems" :key="item" class="flex items-start gap-4">
-                <div class="w-5 h-5 rotate-45 bg-gold"></div>
-                <p class="font-signika font-light text-2xl leading-8 text-white/80">{{ item }}</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex flex-col gap-4">
-            <p class="font-signika font-semibold text-2xl text-gold leading-8">
-              So you stay up until 2am. Again.
-            </p>
-            <p class="font-signika font-light text-2xl leading-8 text-white/80">
-              And then your players spend 45 minutes interrogating the innkeeper you made up on the spot.
-            </p>
-            <p class="font-signika font-semibold text-2xl text-gold leading-8">
-              Sound familiar?
-            </p>
-          </div>
-        </div>
+      <img 
+        src="/Images/We Know How it feels.png" 
+        alt="We Know How It Feels" 
+        class="h-auto max-w-full object-contain"
+      />
+      
+      <div class="flex items-center justify-center gap-2 w-full max-w-[600px] opacity-90">
         
-        <!-- Right: Image Card -->
-        <div class="relative w-full lg:w-[704px] h-[566px] rounded-[12px] border border-white/10 overflow-hidden bg-dark-card">
-          <img 
-            src="/Images/Group 11 1.png" 
-            alt="DM burnout" 
-            class="absolute inset-0 w-full h-full object-cover"
-          />
-
-          <div class="absolute inset-0 bg-gradient-to-t from-[#0F1012] via-transparent to-transparent"></div>
-
-          <!-- Top Badge -->
-          <div class="absolute top-6 left-6 px-4 py-2 bg-white/10 border border-white/10 backdrop-blur-[22px] rounded-lg text-white">
-            <span class="font-signika font-light text-lg">over-stimulation + DM guilt.</span>
-          </div>
-
-          <!-- Bottom overlay -->
-          <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-[#0F1012] via-[#0F1012]/60 to-transparent">
-            <div class="flex items-center justify-between mb-3">
-              <p class="font-signika font-semibold text-lg text-white">Prep fatigue</p>
-              <span class="font-signika font-light text-sm text-white/70">92%</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" style="width: 92%"></div>
-            </div>
-          </div>
-        </div>
+        <img 
+          src="/Images/Vector 3.png" 
+          alt="Divider Left" 
+          class="flex-1 h-auto max-h-[10px] object-contain object-right" 
+        />
+        
+        <img 
+          src="/Images/Rectangle 125.png" 
+          alt="Divider Center" 
+          class="h-[22px] w-auto object-contain" 
+        />
+        
+        <img 
+          src="/Images/Vector 4.png" 
+          alt="Divider Right" 
+          class="flex-1 h-auto max-h-[10px] object-contain object-left" 
+        />
+        
       </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      
+      <div class="font-signika">
+        <h3 class="text-[#CBA66A] text-[20px] font-semibold mb-6">
+          It’s Tuesday night. Your game is Thursday. And you still need to:
+        </h3>
+
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-start gap-4 text-[18px] text-white/80 font-light">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1">
+              <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" fill="#CBA66A"/>
+            </svg>
+            <span>Flesh out that villain’s master plan</span>
+          </li>
+          <li class="flex items-start gap-4 text-[18px] text-white/80 font-light">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1">
+              <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" fill="#CBA66A"/>
+            </svg>
+            <span>Create the five NPCs your players will definitely interrogate</span>
+          </li>
+          <li class="flex items-start gap-4 text-[18px] text-white/80 font-light">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1">
+              <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" fill="#CBA66A"/>
+            </svg>
+            <span>Draw (or find) a decent battle map</span>
+          </li>
+          <li class="flex items-start gap-4 text-[18px] text-white/80 font-light">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1">
+              <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" fill="#CBA66A"/>
+            </svg>
+            <span>Write descriptions for the haunted mansion</span>
+          </li>
+          <li class="flex items-start gap-4 text-[18px] text-white/80 font-light">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-1">
+              <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" fill="#CBA66A"/>
+            </svg>
+            <span>Stat out custom monsters because the book versions are boring</span>
+          </li>
+        </ul>
+
+        <p class="text-[#CBA66A] text-[20px] font-semibold mb-4">
+          So you stay up until 2am. Again.
+        </p>
+
+        <p class="text-white/80 text-[18px] leading-relaxed mb-6 max-w-[500px] font-light">
+          And then your players spend 45 minutes interrogating the innkeeper you made up on the spot.
+        </p>
+
+        <p class="text-[#CBA66A] text-[20px] font-semibold">
+          Sound familiar?
+        </p>
+      </div>
+
+      <div class="relative">
+        <img 
+          src="/Images/Rotating image.png" 
+          alt="DM Prep Fatigue with Laptop and Notes" 
+          class="w-full h-auto rounded-lg shadow-2xl"
+        />
+      </div>
+
     </div>
   </section>
 </template>
 
-<script setup lang="ts">
-const todoItems = [
-  "Flesh out that villain's master plan",
-  "Create the five NPCs your players will definitely interrogate",
-  "Draw (or find) a decent battle map",
-  "Write descriptions for the haunted mansion",
-  "Stat out custom monsters because the book versions are boring"
-]
+<script>
+export default {
+  name: 'WeKnowSection'
+}
 </script>
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap');
+
+.font-vollkorn { font-family: 'Vollkorn SC', serif; }
+.font-signika { font-family: 'Signika', sans-serif; }
+.font-figtree { font-family: 'Figtree', sans-serif; }
+</style>
