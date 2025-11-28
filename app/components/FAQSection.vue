@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full py-[120px] px-[50px] lg:px-[100px] overflow-hidden bg-[#0B0C0E]">
+  <section class="relative w-full py-16 lg:py-[120px] px-6 lg:px-[100px] overflow-hidden bg-[#0B0C0E]">
     
     <div 
       class="absolute inset-0 z-0"
@@ -13,11 +13,11 @@
 
     <div class="absolute inset-0 bg-black/20 pointer-events-none z-0"></div>
 
-    <div class="relative z-10 max-w-[1488px] mx-auto flex flex-col lg:flex-row items-start gap-20">
+    <div class="relative z-10 max-w-[1488px] mx-auto flex flex-col lg:flex-row items-start gap-10 lg:gap-20">
       
-      <div class="w-full lg:w-[400px] flex-shrink-0 sticky top-10 mt-[-36000px]">
+      <div class="w-full lg:w-[400px] flex-shrink-0 relative lg:sticky lg:top-10">
         <h2 
-          class="font-vollkorn font-bold text-[48px] leading-[1.1] tracking-wide"
+          class="font-vollkorn font-bold text-[32px] md:text-[40px] lg:text-[48px] leading-[1.1] tracking-wide mb-2 lg:mb-0"
           style="
             background: linear-gradient(to bottom, #C5A059 0%, #E6C88B 45%, #96753A 100%);
             -webkit-background-clip: text;
@@ -28,7 +28,7 @@
             font-variant: small-caps;
           "
         >
-          Questions You<br/>Might Have
+          Questions You<br class="hidden md:block"/> Might Have
         </h2>
       </div>
       
@@ -37,23 +37,23 @@
         <div 
           v-for="(faq, index) in faqs" 
           :key="index" 
-          class="border-b border-white/10 py-6 first:pt-0 last:border-none"
+          class="border-b border-white/10 py-5 lg:py-6 first:pt-0 last:border-none"
         >
           <button 
             @click="toggleFaq(index)" 
             class="w-full flex items-start justify-between text-left group"
           >
-            <div class="flex items-start gap-4">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-[6px]">
+            <div class="flex items-start gap-3 lg:gap-4">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="flex-shrink-0 mt-[4px] lg:mt-[6px] w-[16px] lg:w-[20px]">
                 <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5L12 0Z" fill="#CBA66A"/>
               </svg>
               
-              <span class="font-signika font-bold text-[20px] leading-[32px] text-white/90 group-hover:text-[#CBA66A] transition-colors">
+              <span class="font-signika font-bold text-[18px] lg:text-[20px] leading-[26px] lg:leading-[32px] text-white/90 group-hover:text-[#CBA66A] transition-colors">
                 "{{ faq.question }}"
               </span>
             </div>
             
-            <span class="text-white/60 text-2xl font-light ml-4 mt-1">
+            <span class="text-white/60 text-2xl font-light ml-4 mt-0 lg:mt-1">
               {{ openIndex === index ? '−' : '+' }}
             </span>
           </button>
@@ -66,8 +66,8 @@
             leave-from-class="transform scale-100 opacity-100"
             leave-to-class="transform scale-95 opacity-0"
           >
-            <div v-show="openIndex === index" class="mt-4 pl-9 pr-8">
-              <p class="font-signika font-light text-[18px] leading-[28px] text-white/70">
+            <div v-show="openIndex === index" class="mt-3 lg:mt-4 pl-8 lg:pl-9 pr-0 lg:pr-8">
+              <p class="font-signika font-light text-[16px] lg:text-[18px] leading-[24px] lg:leading-[28px] text-white/70">
                 {{ faq.answer }}
               </p>
             </div>

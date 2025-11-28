@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full min-h-screen lg:h-[1150px] bg-[#0B0C0E] overflow-hidden flex flex-col">
+  <section class="relative w-full min-h-screen lg:h-auto lg:pb-8 bg-[#0B0C0E] overflow-hidden flex flex-col">
     
     <div
       class="absolute inset-0 bg-cover bg-center z-0"
@@ -28,16 +28,13 @@
     </div>
 
     <header class="absolute top-0 left-0 right-0 z-50 flex justify-between items-center px-5 md:px-[100px] h-[80px] md:h-[97px] w-full">
-      
       <div class="flex items-center gap-12">
         <img src="/Images/Valdris copy (1) 1.png" class="h-[22px] md:h-[25px] w-auto opacity-90" alt="Logo" />
-        
         <nav class="hidden md:flex items-center gap-6">
           <a class="text-white/80 font-signika text-[15px] hover:text-white transition cursor-pointer">Blog</a>
           <a class="text-white/80 font-signika text-[15px] hover:text-white transition cursor-pointer">Tiers & Treasures</a>
         </nav>
       </div>
-
       <div class="flex items-center gap-2 md:gap-3">
         <button class="px-3 md:px-4 py-[6px] border border-white/30 bg-white/5 text-white font-signika text-[13px] md:text-[14px] rounded-lg hover:bg-white/10 transition whitespace-nowrap">
           Log in
@@ -54,11 +51,11 @@
       </div>
     </header>
 
-    <div class="relative z-40 flex flex-col justify-start px-6 md:px-[100px] pt-[120px] md:pt-[180px] h-full">
+    <div class="relative z-40 flex flex-col justify-start px-6 md:px-[100px] pt-[120px] md:pt-[150px] lg:pt-[220px] h-full">
       
       <div class="flex flex-col gap-4 md:gap-6 w-full">
         <h1
-          class="font-vollkorn font-bold text-[40px] leading-[1.1] md:text-[64px] w-full max-w-[1250px] tracking-wide text-center md:text-left"
+          class="font-vollkorn font-bold text-[40px] leading-[1.1] md:text-[50px] lg:text-[64px] w-full max-w-[1250px] tracking-wide text-center md:text-left"
           style="
             background: url('/Images/Texture 7.png'), linear-gradient(180deg, #F0D599 0%, #CBA66A 50%, #8C6B38 100%);
             background-blend-mode: overlay; 
@@ -81,7 +78,7 @@
         </p>
       </div>
 
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-start mt-[40px] md:mt-[100px] lg:mt-[150px] gap-8 md:gap-0">
+      <div class="flex flex-col md:flex-row justify-between items-start mt-[40px] md:mt-[80px] lg:mt-[100px] gap-8 md:gap-0">
         
         <div class="flex flex-col items-center md:items-start gap-[14px] w-full md:w-auto">
           <button
@@ -108,7 +105,7 @@
         </div>
       </div>
 
-      <div class="flex gap-5 mt-[50px] md:mt-[80px] pb-12 overflow-x-auto md:overflow-visible no-scrollbar -mx-6 px-6 md:mx-0 md:px-0">
+      <div class="flex gap-5 mt-[50px] md:mt-[60px] lg:mt-[80px] pb-12 md:pb-8 overflow-x-auto md:overflow-visible no-scrollbar -mx-6 px-6 md:mx-0 md:px-0">
         <div class="flex-shrink-0 w-[160px] h-[160px] md:w-[220px] md:h-[220px] rounded-lg bg-gray-900 shadow-2xl overflow-hidden border border-white/10">
           <img src="/Images/Frame 84.png" class="w-full h-full object-cover" />
         </div>
